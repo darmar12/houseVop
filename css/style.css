@@ -1,0 +1,527 @@
+@import './fonts.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #242b33;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: normal;
+}
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+}
+
+/* HEADER START*/
+
+.header {
+  padding: 10px 0 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__title {
+  margin: 0 0 10px 0;
+  font-family: Post No Bills Jaffna;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #ffffff;
+}
+
+.header__suptitle {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__navbar__item {
+  list-style-type: none;
+  margin: 0 40px 0 0;
+}
+
+.header__navbar__item:last-child {
+  margin: 0;
+}
+
+.header__link {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* HEADER FINISH*/
+
+/* HELLO START*/
+
+.hello {
+  background-image: url(../img/hello_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hello__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hello__info {
+  margin: 0 auto;
+  padding: 150px 0 74px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello__title {
+  max-width: 550px;
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #d4c17f;
+  margin: 0 0 100px 0;
+}
+
+.hello__icon {
+  margin: 0 0 200px 0;
+}
+
+.hello__contacts {
+  display: flex;
+  justify-content: space-between;
+  min-width: 580px;
+}
+
+.hello__contacts__item {
+  display: flex;
+}
+
+.hello__contacts__icon {
+  margin: 0 10px 0 0;
+}
+
+.hello__adress {
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.hello__phone {
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+/* HELLO FINISH*/
+
+/* QUALITY START*/
+
+.good_quality {
+  padding: 120px 0;
+}
+
+.quality__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quality__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quality__text {
+  margin: 10px 0 0;
+  max-width: 190px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #fff;
+}
+
+/* QUALITY FINISH*/
+
+/* FLAT START*/
+
+.flat__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flat__title {
+  margin: 0 0 100px 40px;
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #d4c17f;
+}
+
+.flat__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flat__item {
+  margin: 30px 30px 30px 0;
+}
+
+.flat__item:nth-child(2) {
+  margin: 30px 0;
+}
+
+.flat__item:nth-child(3) {
+  margin: 0 30px 0 0;
+}
+
+.flat__item:nth-child(4) {
+  margin: 0;
+}
+
+.flat__figure {
+  position: relative;
+}
+
+.flat__figure:hover .flat__photo {
+  filter: blur(4px);
+}
+
+.flat__figure:hover .flat__desciption {
+  opacity: 1;
+}
+
+.flat__photo {
+  width: 530px;
+  height: 320px;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%);
+  transition: 0.4s linear;
+}
+
+.flat__desciption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.4s linear;
+}
+
+.figure__title {
+  margin: 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+/* FLAT FINISH*/
+
+/* SEE START*/
+
+.see {
+  padding: 180px 0;
+  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%),
+    linear-gradient(0deg, rgba(36, 43, 51, 0), rgba(36, 43, 51, 0)), url(../img/bg__see.png),
+    #c4c4c4;
+}
+
+.see__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.see__title {
+  margin: 0 0 30px 30px;
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #d4c17f;
+}
+
+.see__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.see__text {
+  max-width: 535px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.see__form {
+  min-height: 130px;
+}
+
+.form__item {
+  display: flex;
+}
+
+.form__input {
+  margin: 0 30px 45px 0;
+  width: 255px;
+  height: 50px;
+  background: #ffffff;
+  opacity: 0.3;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  color: #000;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: center;
+  color: #bebebe;
+}
+
+.form__input:last-child {
+  margin: 0;
+}
+
+.form__text {
+  max-width: 255px;
+  margin: 0 30px 0 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #e7e7e7;
+}
+
+.form__btn {
+  width: 255px;
+  height: 50px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #d4c17f;
+  border: none;
+}
+
+/* SEE FINISH*/
+
+/* VIDEO START*/
+
+.video__youtube {
+  width: 100%;
+  min-height: 650px;
+}
+
+/* VIDEO FINISH*/
+
+/* QUESTION START*/
+
+.question {
+  padding: 120px 0;
+}
+
+.container__question {
+  display: flex;
+  flex-direction: column;
+}
+
+.question__title {
+  margin: 0 0 30px 30px;
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #d4c17f;
+}
+
+.question__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question__text {
+  max-width: 255px;
+  font-family: Raleway;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #e7e7e7;
+}
+
+.question__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question__input {
+  margin: 0 30px 0 0;
+}
+
+.question__input:last-child {
+  margin: 0;
+}
+/* QUESTION FINISH*/
+
+/* FOOTER START*/
+
+.footer {
+  padding: 60px 0 50px 0;
+  background-color: #2d343c;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__name {
+  margin: 0 160px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  margin: 0 0 15px 0;
+  font-family: Post No Bills Jaffna;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #ffffff;
+}
+
+.footer__suptitle {
+  margin: 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+}
+
+.footer__nav {
+  margin: 0 175px 0 0;
+}
+
+.footer__list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__item {
+  width: 130px;
+  margin: 0 0 10px 0;
+  list-style-type: none;
+}
+
+.footer__link {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__info {
+  padding: 5px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__address,
+.footer__phone,
+.footer__text,
+.footer__mail {
+  margin: 0 0 15px 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.footer__mail {
+  margin: 0 0 20px 0;
+}
+
+.footer__mail a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.footer__icon {
+  margin: 0 21px 0 0;
+}
+
+/* FOOTER FINISH*/
